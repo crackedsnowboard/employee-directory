@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Bernd Leno",
+    "position": "Goalkeeper",
+    "nationality": "Germany",
+    "jersey": 1,
+    "dob": "3/4/1992",
+    "market": "$32m"
+  },
+  {
+    "id": 2,
+    "name": "Emi Martinez",
+    "position": "Goalkeeper",
+    "nationality": "Argentina",
+    "jersey": 26,
+    "dob": "9/2/1992",
+    "market": "$8m"
+  },
+  {
+    "id": 3,
+    "name": "Hector Bellerin",
+    "position": "Right Back",
+    "nationality": "Spain",
+    "jersey": 2,
+    "dob": "3/19/1995",
+    "market": "$32m"
+  },
+  {
+    "id": 4,
+    "name": "William Saliba",
+    "position": "Center Back",
+    "nationality": "France",
+    "jersey": 4,
+    "dob": "3/24/2001",
+    "market": "$22.5m"
+  },
+  {
+    "id": 5,
+    "name": "Kieran Tierney",
+    "position": "Left Back",
+    "nationality": "Ireland",
+    "jersey": 3,
+    "dob": "6/5/1997",
+    "market": "$28m"
+  },
+  {
+    "id": 6,
+    "name": "Pierre-Emerick Aubameyang",
+    "position": "Striker",
+    "nationality": "Gabon",
+    "jersey": 14,
+    "dob": "6/18/1989",
+    "market": "$56m"
+  },
+  {
+    "id": 7,
+    "name": "Nicolas Pepe",
+    "position": "Right Wing",
+    "nationality": "Ivory Coast",
+    "jersey": 19,
+    "dob": "5/29/1995",
+    "market": "$45m"
+  },
+  {
+    "id": 8,
+    "name": "Bukayo Saka",
+    "position": "Left Wing",
+    "nationality": "England",
+    "jersey": 7,
+    "dob": "9/5/2001",
+    "market": "$35m"
+  },
+  {
+    "id": 9,
+    "name": "Gabriel Martinelli",
+    "position": "Left Wing",
+    "nationality": "Brazil",
+    "jersey": 35,
+    "dob": "6/18/2001",
+    "market": "$25m"
+  },
+  {
+    "id": 10,
+    "name": "Lucas Torreira",
+    "position": "Defensive Midfield",
+    "nationality": "Uruguay",
+    "jersey": 11,
+    "dob": "2/11/1996",
+    "market": "$30m"
+  },
+  {
+    "id": 11,
+    "name": "Matteo Guendouzi",
+    "position": "Central Midfield",
+    "nationality": "France",
+    "jersey": 29,
+    "dob": "4/14/1999",
+    "market": "$32m"
+  },
+  {
+    "id": 12,
+    "name": "Granit Xhaka",
+    "position": "Central Midfield",
+    "nationality": "Switzerland",
+    "jersey": 34,
+    "dob": "9/27/1992",
+    "market": "$24m"
+  }
+]
