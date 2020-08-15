@@ -19,8 +19,6 @@ class App extends Component {
   };
 
   handleSort = (identifier) => {
-    // console.log(identifier);
-    // console.log(this.state.employees);
     let sortedEmployees = this.state.employees.sort((a ,b) => {
       
     if (a.name < b.name) {
