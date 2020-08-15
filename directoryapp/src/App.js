@@ -13,13 +13,14 @@ class App extends Component {
   state = {
     employees: employees,
     sortedEmployees: [],
-    name: "Name"
-  
+    name: "Name",
+    market: "Market"
+
   };
 
   handleSort = (identifier) => {
-    console.log(identifier);
-    console.log(this.state.employees);
+    // console.log(identifier);
+    // console.log(this.state.employees);
     let sortedEmployees = this.state.employees.sort((a ,b) => {
       
     if (a.name < b.name) {
@@ -34,8 +35,8 @@ class App extends Component {
   }
 
   handleMarket = (identifier) => {
-    console.log(identifier);
-    console.log(this.state.employees);
+    // console.log(identifier);
+    // console.log(this.state.employees);
     let sortedEmployees = this.state.employees.sort((a ,b) => {
       
     if (a.market < b.market) {
@@ -49,21 +50,17 @@ class App extends Component {
     this.setState({employees: sortedEmployees})
   }
 
+
+
+  
   handleFind = (event) => {
     console.log(event.target.value);
-    // console.log(this.state.employees);
-    // let foundEmployee = this.state.employees.filter((a ,b) => {
-      
-    // if (a.market < b.market) {
-    //   return -1
-    // }
-    //   if (a.market > b.market) {
-    //     return 1
-    //   }
-    //   return 0
-    // })
-    // this.setState({employees: foundEmployee})
+    let sortedEmployees = this.state.employees.filter(employee => this.state.employees === event.target.value)
+    
+    console.log(sortedEmployees);
+    this.setState({employees: sortedEmployees})
   }
+    
 
 
   render() {
@@ -81,7 +78,7 @@ class App extends Component {
               <th scope="col">Postion</th>
               <th scope="col">Nationality</th>
               <th scope="col">DOB</th>
-              <th scope="col" onClick={() => this.handleMarket(this.state.market)}>Market Value</th>
+              <th scope="col" onClick={() => this.handleMarket(this.state.market)}>{this.state.market}</th>
               <th scope="col">Jersey #</th>
             </tr>
           </thead>
