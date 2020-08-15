@@ -12,23 +12,76 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     employees: employees,
+    sortedEmployees: [],
+    name: "Name"
   
   };
+
+  handleSort = (identifier) => {
+    console.log(identifier);
+    console.log(this.state.employees);
+    let sortedEmployees = this.state.employees.sort((a ,b) => {
+      
+    if (a.name < b.name) {
+      return -1
+    }
+      if (a.name > b.name) {
+        return 1
+      }
+      return 0
+    })
+    this.setState({employees: sortedEmployees})
+  }
+
+  handleMarket = (identifier) => {
+    console.log(identifier);
+    console.log(this.state.employees);
+    let sortedEmployees = this.state.employees.sort((a ,b) => {
+      
+    if (a.market < b.market) {
+      return -1
+    }
+      if (a.market > b.market) {
+        return 1
+      }
+      return 0
+    })
+    this.setState({employees: sortedEmployees})
+  }
+
+  handleFind = (event) => {
+    console.log(event.target.value);
+    // console.log(this.state.employees);
+    // let foundEmployee = this.state.employees.filter((a ,b) => {
+      
+    // if (a.market < b.market) {
+    //   return -1
+    // }
+    //   if (a.market > b.market) {
+    //     return 1
+    //   }
+    //   return 0
+    // })
+    // this.setState({employees: foundEmployee})
+  }
+
 
   render() {
     return (
       <div>
         <Title />
-        <Search />
+        <Search 
+        handleFind={this.handleFind}
+        />
         <table className="table">
           <caption>List of employees</caption>
           <thead>
             <tr>
-              <th scope="col">Name</th>
+              <th scope="col" onClick={() => this.handleSort(this.state.name)}>{this.state.name}</th>
               <th scope="col">Postion</th>
               <th scope="col">Nationality</th>
               <th scope="col">DOB</th>
-              <th scope="col">Market Value</th>
+              <th scope="col" onClick={() => this.handleMarket(this.state.market)}>Market Value</th>
               <th scope="col">Jersey #</th>
             </tr>
           </thead>
